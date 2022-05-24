@@ -1,0 +1,61 @@
+
+<html>
+	<head>
+		<style type="text/css">
+			.container-img {
+			  position: relative;
+			  width: 500px;
+			}
+
+			.image {
+			  display: block;
+			  width: 500px;
+			  height: 500px;
+			  transition:5s;
+			}
+            .overlay{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                opacity: 0;
+                transition: 1s;
+                background-color: rgb(194, 147, 184);
+            }
+            .container-img:hover .overlay{
+                opacity: 1;
+            }
+            .container-img:hover .image{
+                transform:rotate(360deg);
+            }
+            .text{
+                color: brown;
+                size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%,-50%);
+                -moz-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+                text-align: center;
+                text-size-adjust: 24px;
+                
+            }
+
+			
+		</style>
+	</head>
+	<body>
+		<h2>Image Overlay Effect</h2>
+		<div class="container-img">
+			<img src="../dixanti/1img (2).jpg" alt="Photo Display here" class="image">
+			<div class="overlay">
+				<div class="text">i like  nature.</div>
+		    </div>
+		</div>
+	</body>
+</html>
