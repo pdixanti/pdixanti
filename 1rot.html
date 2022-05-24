@@ -1,0 +1,103 @@
+<html>
+
+ <head>
+        <title> Demo Of CSS</title>
+        <style type="text/css">
+            div{
+                height:200px;
+                width:200px;
+                transition:3s;
+                font-size:25px;
+                font-weight:bold;
+                color:#510eee;
+                background-color:rgb(178, 202, 112);
+            }
+            #TranslateDiv:hover
+            {
+                -webkit-transform:translate(100px,100px);
+                   -moz-transform:translate(100px,100px);
+                    -ms-transform:translate(100px,100px);
+                     -o-transform:translate(100px,100px);
+                        transform:translate(100px,100px);
+                      background-color:rgb(132, 206, 171);
+                      color:rgb(224, 168, 104); 
+            }
+			
+            #RotateDiv:hover
+            {
+                -webkit-transform:rotate(360deg);
+                   -moz-transform:rotate(360deg);
+                    -ms-transform:rotate(360deg);
+                     -o-transform:rotate(360deg);
+                        transform:rotate(360deg);
+                      background-color:rgb(235, 16, 16);
+                      color:Yellow; 
+         
+            }
+			#RotateDiv3D:hover{
+				-webkit-transform:rotate3d(1,1,0,360deg);
+                   -moz-transform:rotate3d(1,1,0,360deg);
+                    -ms-transform:rotate3d(1,1,0,360deg);
+                     -o-transform:rotate3d(1,1,0,360deg);
+                        transform:rotate3d(1,1,0,360deg);
+                      background-color:rgb(93, 168, 211);
+                      color:rgb(99, 192, 106); 
+         
+			}
+            #SkewDiv:hover
+            {
+                -webkit-transform:skew(45deg);
+                   -moz-transform:skew(45deg);
+                    -ms-transform:skew(45deg);
+                     -o-transform:skew(45deg);
+                        transform:skew(45deg);
+                      background-color:rgb(120, 196, 179);
+                      color:rgb(173, 117, 148); 
+            }
+            #ScaleDiv:hover
+            {
+                -webkit-transform:scale(1.5,0.5);
+                   -moz-transform:scale(1.5,0.5);
+                    -ms-transform:scale(1.5,0.5);
+                     -o-transform:scale(1.5,0.5);
+                        transform:scale(1.5,0.5);
+                      background-color:Blue;
+                      color:Yellow; 
+            }
+            #OpacityDiv:hover
+            {
+                opacity:0.6;
+            }
+            #RGBADiv:hover
+            {
+                background:rgba(209, 134, 203, 0.5);
+            }
+            #BoxShadowDiv:hover
+            {
+                box-shadow:0px 0px 30px rgb(122, 100, 202);
+            }
+            #TextShadowDiv:hover
+            {
+                text-shadow:3px 3px 3px rgb(102, 207, 176);
+            }
+			#BorderRadiusDiv:hover
+			{
+				border-radius:50%;
+			}
+			#OverFlowDiv{overflow:auto;}
+        </style>
+    </head>
+    <body>
+        <div id="TranslateDiv">Translate<iframe width="200" height="150" src="https://www.youtube.com/embed/_orQATM8xKk?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><hr />
+        <div id="RotateDiv">Rotate<iframe width="200" height="150" src="https://www.youtube.com/embed/M8tqOh8T62o?start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></div><hr />
+		<div id="RotateDiv3D">Rotate 3d<img width="200" height="160"src="../dixanti/1img (2).jpg"><hr/></div>
+        <div id="SkewDiv">Skew<img width="150"height="150" src="../dixanti/logo.png"></div><hr />
+        <div id="ScaleDiv">Scale "name:tibadiya dixanti,         department: bachelor of computer application </div><hr />
+        <div id="OpacityDiv">Opacity</div><hr />
+        <div id="RGBADiv">RGBA</div><hr />
+        <div id="BoxShadowDiv">Box-Shadow</div><hr />
+        <div id="TextShadowDiv">Text-Shadow</div><hr />
+		<div id="BorderRadiusDiv">Border Radius</div><hr />
+		<div id="OverFlowDiv">Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow Overflow </div><hr />
+    </body>
+</html>
