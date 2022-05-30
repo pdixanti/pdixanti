@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+           <title>My Profile</title>
+            
+           <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css"/>
+
+		   <link href="css/bootstrap/bootstrap.css" type="text/css" rel="stylesheet" />
+           
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+          
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" language="javascript"></script>
+    
+           <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+           <script src="JS/wow.min.js" type="text/javascript"></script>
+           <link href="CSS/animate.css" rel="stylesheet" type="text/css" />
+           
+		   <script type="text/javascript">
+                new WOW().init();
+           </script>
+
+           <style type="text/css">
+                #HeaderDiv a.navbar-brand
+	            {
+	                font-family:Verdana, Geneva, Tahoma, sans-serif;
+	                font-size:25px;    
+	                color:#6cc1db;
+	            }
+	            #navbarCollapse li b
+	            {
+	                color:#cc69b3;
+	            }
+	            
+                .fullscreen_bg 
+                {
+					position: relative;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    overflow:hidden;
+                    z-index:-1;
+                }
+
+                .fullscreen_bg_video 
+                {
+                    position:absolute;
+                    width: 100%;
+                    height: auto;
+                    min-width: 100%;
+	                min-height: 100%;
+	            }
+	            
+	            #Home
+	            {
+	                height:auto;
+	                padding-bottom:40px;
+	                color:rgb(255, 253, 253);
+	                font-weight:bold
+	            }
+	            
+	            #HomeRow
+	            {
+	                padding-top:7%;   
+	            }
+	            #HomeRow a i.fa
+	            {
+	                color:#ffffff;
+	            }
+	            
+	            #HomeRow div.col-lg-offset-3
+	            {
+	                background:rgba(18, 16, 17, 0.8); 
+	                padding-top:20px;
+	                padding-bottom:20px;
+	                border-radius:5px;
+	                box-shadow:0px 0px 10px rgb(130, 98, 206);   
+	            }
+	            
+	            #TechnicalSummary
+	            {
+	                height:auto;
+	                padding-bottom:40px;
+	                color:#fff;
+	                background-attachment:fixed;
+	                background-image:url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/graphicstock-high-angle-view-of-black-office-desk-table-with-computer-supplies-and-green-plant-top-view-with-copy-space_ST-JrbZrJ-_thumb.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                line-height:1.5;
+	            }
+	            #TechnicalSummaryRow
+	            {
+	                padding-top:7%;
+	            }
+	            #TechnicalSummary h1
+	            {
+	                font-family:Monotype Corsiva;
+	            }
+	            
+	            #Qualifications
+	            {
+	                background-attachment:fixed;
+	                background-image:url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/graphicstock-high-angle-view-of-black-office-desk-table-with-computer-supplies-and-green-plant-top-view-with-copy-space_ST-JrbZrJ-_thumb.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:18px;
+	                padding-bottom:40px;
+	                color:#000000;
+	            }
+	            #QualificationsRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+	            }
+	            #QualificationsRow div.col-lg-offset-1
+	            {
+	                padding:10px;
+	                background-color:rgba(255,255,255,0.8);
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px rgb(226, 98, 126);
+					opacity:0.8;
+	            }
+	            #Qualifications table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Qualifications table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Qualifications table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+	            
+	            #Skills
+	            {
+	                background-attachment:fixed;
+	                background-image:url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/graphicstock-high-angle-view-of-black-office-desk-table-with-computer-supplies-and-green-plant-top-view-with-copy-space_ST-JrbZrJ-_thumb.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                padding-bottom:40px;
+	                color:#000000;
+	            }
+	            #SkillsRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+	            }
+
+	            #SkillsRow div.col-lg-offset-5
+	            {
+	                padding:10px;
+	                background-color:#DCDCDC;
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px rgb(34, 247, 6);
+	                opacity:0.8;
+	            }
+
+	            #Skills table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+
+	            #Skills table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+
+	            #Skills table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+
+
+				#Objective
+	            {
+	                height:auto;
+	                padding-bottom:40px;
+	                color:rgb(255, 255, 255);
+	                background-attachment:fixed;
+	                background-image:url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/graphicstock-high-angle-view-of-black-office-desk-table-with-computer-supplies-and-green-plant-top-view-with-copy-space_ST-JrbZrJ-_thumb.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                line-height:1.5;
+	            }
+	            #ObjectiveROW
+	            {
+	                padding-top:7%;
+	            }
+	            #Objective h1
+	            {
+	                font-family:Monotype Corsiva;
+	            }
+
+				#Resume
+	            {
+	                background-attachment:fixed;
+	                background-image:url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/graphicstock-high-angle-view-of-black-office-desk-table-with-computer-supplies-and-green-plant-top-view-with-copy-space_ST-JrbZrJ-_thumb.jpg');
+	                background-repeat:no-repeat;
+	                background-size:cover;
+	                font-size:20px;
+	                padding-bottom:40px;
+	                color:#000000;
+	            }
+	            
+	            #ResumeRow
+	            {
+	                 margin-top:100px;
+	                 margin-bottom:100px;
+	            }
+	            #ResumeRow div.col-lg-offset-5
+	            {
+	                padding:10px;
+	                background-color:rgba(255,255,255,0.8);
+	                border-radius:8px;
+	                box-shadow:0px 0px 18px rgb(160, 243, 5);
+					opacity:0.8;
+	            }
+	            #Resume table
+	            {
+	                width:100%;
+	                margin-top:50px;
+	            }
+	            #Resume table tr td
+	            {
+	                padding-bottom:20px;
+	            }
+	            #Resume table tr td:first-child
+	            {
+	                width:30%;
+	                padding-left:10px;
+	            }
+	            
+	            .ContainerImage
+	            {
+					border-radius:5px;
+	                box-shadow:0px 0px 10px black; 
+                    position: relative;
+                    width:100%;
+                }
+				
+                .image 
+                {
+                  display: block;
+                  width: 100%;
+                  height: 200px;
+				  transition:1s;
+                }
+				.ContainerImage:hover .image 
+                {
+                  transform:rotate(360deg);
+                }
+	            
+	            
+
+	            @media(max-width:768px)
+	            {
+	                .fullscreen_bg_video 
+                    {
+                        left:-160%;
+                        width:260%;
+                    }
+                    #TechnicalSummary
+                    {
+                        height:auto;    
+                    }
+                }
+                @media(max-width:992px)
+                {
+                    #HomeRow
+	                {
+	                 padding-top:17%;    
+	                }    
+	                #TechnicalSummaryRow
+	                {
+	                 padding-top:17%;    
+	                }
+                }
+
+           </style>
+    </head>
+
+    <body>
+         <div>
+             <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top" style="z-index:1000;">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header" id="HeaderDiv">
+                       <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                               <span class="icon-bar"></span>
+							   <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+				       </button>
+                       <a href="#" class="navbar-brand">tibadiya dixanti</a>
+                  </div>
+                  <div id="navbarCollapse" class="collapse navbar-collapse">
+                       <ul class="nav navbar-nav navbar-right" style="font-size:13px;padding-right:15px;">
+                           <li><a href="#Home"><b>Intro</b></a></li>
+						   <li><a href="#Objective"><b>Objective</b></a></li>
+		                   <li><a href="#TechnicalSummary"><b>Technical Summary</b></a></li>
+                           <li><a href="#Qualifications"><b>Qualifications</b></a></li>
+						   <li><a href="#Resume"><b>Hobbies</b></a></li>
+                           <li><a href="#Skills"><b>Skills</b></a></li>>
+
+
+                           
+					   </ul>
+                 </div>
+            </nav>
+         </div>	
+
+         <div id="Home" class="fullscreen_bg">
+              <video src="https://media.istone-shot-of-big-busy-corporate-office-with-tow-rows-video-id1141731563" autoplay loop muted class="fullscreen_bg_video"></video>
+              <div class="row" id="HomeRow">
+                   <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-lg-6 col-md-6 col-sm-8 col-xs-12 wow slideInDown" data-wow-duration="3s">
+                        <center><img src="../dixanti/logo.png"  alt="dixanti" style="height: 200px;width: 250px;" ></center>
+                        <center><h2>dixanti tibadiya</h2></center>
+                        <center><h5>Student Bachelor of computer application</h5><hr /></center>
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-5 col-md-5 col-sm-5">
+                                 <center><i class="fa fa-2x fa-phone"></i> +91- 9313121499</center>
+                            </div>
+                            <div class="col-lg-5 col-md-6 col-sm-6">
+                                 <center><i class="fa fa-2x fa-envelope"></i> <a href="dixantitibadiya@gmail.com" style="color:#ffffff;">dixantitibadiya@gmail.com</a></center>
+                            </div>
+                        </div><hr />
+                        <div class="row">
+                            <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+                                 <center><i class="fa fa-2x fa-map-marker"></i>sp girls hostel, bhagirath road,near dhoribhai park, naranpura, Ahmedabad - 380015.</center>
+                            </div>
+                        </div><hr />
+                        <center><a href="#"><i class="fa fa-2x fa-whatsapp" style="color: turquoise;"></i></a> &nbsp;
+							    <a href="#"><i class="fa fa-2x fa-twitter-square" style="color: turquoise;"></i></a> &nbsp;
+								<a href="#"><i class="fa fa-2x fa-linkedin-square" style="color: turquoise;"></i></a> &nbsp;
+								<a href="#"><i class="fa fa-2x fa-instagram" style="color: turquoise;"></i></a></center>
+                   </div>
+              </div>
+         </div>
+
+		 <div id="Objective" class="container-fluid wow bounceIn" data-wow-duration="3s">
+			<div class="row" id="#ObjectiveROW">
+				 <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+					  <h1 class="text-center"><i class="fa fa-object-group "></i> Objective</h1><hr/>
+					  <ul>
+						  
+						  <li>Seeking a responsible and challenging job in a growth oriented and progressive organization,where my skills will significantly contribute to the success of organisation and provide opportunities for growth of my knowledge.</li>
+					  </ul>
+				 </div>
+			</div>
+	   </div>
+         
+         <div id="TechnicalSummary" class="container-fluid wow bounceIn" data-wow-duration="3s">
+              <div class="row" id="TechnicalSummaryRow">
+                   <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+                        <h1 class="text-center"><i class="fa fa-gears"></i> Technical Summary</h1><hr />
+                        <ul>
+                            <li>Persuing (BCA)Bachelor Of Computer Application In Silver oak University.</li><br/>
+                            <li>Core expertise in Web designing by using HTML To HTML5, CSS, JavaScript, Bootstrap.</li><br>
+							<li>In database used for Web application development expertise in MS Sql Server.</li><br>
+                            <li>Result oriented, self driven, highly motivated, smart and hungry to learn new technologies, strategies and processes. </li> 
+
+                        </ul>
+                   </div>
+              </div>
+         </div>
+
+         <div id="Qualifications" class="container-fluid">
+              <div class="row" id="QualificationsRow">
+                   <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-6 col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="3s">
+                        <br /><h2 class="text-center"><i class="fa fa-object-group"></i> Education Qualification</h2><hr />
+                        <table class="table table-responsive">
+
+                            <tr>
+                                <td>Year<br />2021</td>
+                                <td>Bachelor Of Computer Application(Running).</td>
+                            </tr>
+                            <tr>
+                                <td>Year<br />2019</td>
+                                <td>HSC.</td>
+                            </tr>
+                            <tr>
+                                <td>Year<br />2017</td>
+                                <td>SSC.</td>
+                            </tr>
+                        </table>
+                   </div>
+              </div>
+         </div>
+
+         <div id="Skills" class="container-fluid">
+              <div class="row" id="SkillsRow">
+                   <div class="col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-lg-6 col-md-6 col-sm-6 wow slideInRight" data-wow-duration="3s">
+                        <center><br /><h2><i class="fa fa-object-group"></i> Technical Skills</h2><hr /></center>
+                        <table>
+                            <tr>
+                                <td>Programming Languages:</td>
+                                <td>Java, Web Scrpting - HTML, CSS <br/> Javascript <br/>  Media Query, Bootstrap Components. <br>  C Programming </td><br>
+                            </tr>
+                            <tr>
+                                <td>Tools & Technologies:</td>
+                                <td> Vs Code, Turbo C++, Pycham, Notepad, DevC++, Oracal and Etc.</td>
+                            </tr>
+                            <tr>
+                                <td>Databases:</td>
+                                <td> Microsoft SQL Server, Microsoft Access.</td>
+                            </tr>
+                            <tr>
+                                <td>Operating Systems:</td>
+								<td>Mac Operating Systems.<br/>Microsoft Windows.</td>
+                            </tr>
+                        </table>
+                   </div>
+              </div>
+         </div>
+
+		
+
+		 <div id="Resume" class="container-fluid">
+			<div class="row" id="ResumeRow">
+				 <div class="col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-lg-6 col-md-6 col-sm-6 wow slideInLeft"  data-wow-duration="3s" style="align-self: right">
+					  <center><br /><h2><i class="fa fa-object-group"></i>Hobbies</h2><hr /></center>
+					  <table>
+						  <tr>
+							Reading, Learning, Memes, <br> ,<br> Listening Music, Comedy, Nature Photography 
+					  </table>
+				 </div>
+			</div>
+	   </div>
+
+						  <tr>
+					  </table>
+				 </div>
+			</div>
+	     </div>
+
+		 
+				 <br/><br/><br/>
+				
+					  </div>
+				 </div>
+				
+					</div><hr/>
+			   </div>	<br/><br/><br/>
+				 
+			</div>
+		</center>
+	   </div>
+
+	</div>
+    </body>
+</html>
