@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Demo Dragabble</title>
+        <link rel="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/theme.min.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+     
+        <style type="text/css">
+            #MyDiv,#MyHomeDiv,#MyHorizontalDiv,#MyVerticalDiv,#MyDivDisable,#MyThreeSecondsDelayDiv
+            {
+                 width:200px; 
+                 height:200px; 
+                 padding:10px; 
+                 background:green;
+                 color:navy;
+                 font-size:large;
+                 font-weight:bold
+            }
+            #MyFiftyPixelDiv
+            {
+                 width:800px; 
+                 height:200px; 
+                 padding:10px; 
+                 background:greenyellow;
+                 color:red;
+                 font-size:large;
+                 font-weight:bold
+            }
+            #MyHomeDiv,#MyHorizontalDiv,#MyVerticalDiv,#MyFiftyPixelDiv,#MyThreeSecondsDelayDiv
+            {
+                border:solid 3px #d8800c;
+            }
+         </style>
+         <script  type="text/javascript">
+             $(document).ready(function(){
+                $("#MyDiv").draggable();
+                $("#MyHomeDiv span").draggable({
+                    containment: "#MyHomeDiv"
+                });
+                $("#MyHorizontalDiv span").draggable({
+                  axis: "y"
+              });
+
+              $("#MyVerticalDiv span").draggable({
+                  axis: "x"
+              });
+              $("#MyFiftyPixelDiv span").draggable({
+                  distance: 900
+              });
+
+              $("#MyThreeSecondsDelayDiv span").draggable({
+                  delay:3000
+              });
+
+             })
+         </script>
+         
+    </head>
+    <body>
+        <div id="MyDiv">
+            <p>Hii Friends....!!</p>
+        </div>
+        <hr/>
+        <div id="MyHomeDiv">
+            <span>This Is My Home And I Can Move Within It Only.....</span><br /><br />
+        </div>
+        <hr/>
+        <div id="MyHorizontalDiv">
+            <span>I can Move only verticaly....</span><br /><br />
+        </div>
+        <hr/><div id="MyThreeSecondsDelayDiv">
+            <span>I Can Move Only After 3 Seconds....</span><br /><br />
+        </div>
+        <hr/>
+        <div id="MyFiftyPixelDiv">
+            <span>I Can Move Only After 200 PX....</span><br /><br />
+        </div>
+        <hr/>
+
+    </body>
+</html>
